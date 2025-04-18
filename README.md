@@ -4,7 +4,8 @@ This tool helps identify whether research papers are clinical trials by leveragi
 
 ## ⚠️ Disclaimer
 
-This is a bare-bones prototype, “vibe-coded” using GPT-4o to explore a proof of concept. It is not production-ready — there's no backend, minimal validation, and the app runs entirely in-browser!
+This is a bare-bones prototype, “vibe-coded” using GPT-4o to explore a proof of concept. It is not production-ready — there's minimal validation, no unit tests and the app runs entirely in-browser!
+
 ---
 
 ## 🔍 How It Works
@@ -45,19 +46,21 @@ This will launch the app at `http://localhost:5173` (or similar, depending on yo
 
 ## 📁 CSV Format
 
-Ensure your CSV includes at least these columns:
+Ensure your CSV includes at least these columns in the following format:
 
-```csv
-ID,title,abstract
-1,"Sample Title","This is the abstract of the research paper..."
-2,"Another Title","Another research abstract..."
-```
+| ID            | title         | abstract     |
+| ------------- | ------------- | ------------ |
+| 1             | Publication title 1 | Publication abstract 1 | 
+| 2             | Publication title 2 | Publication abstract 2 |
+
 A sample csv file dataset has been included in the repository for you to test the app.
+
 ---
 
 ## 🔐 API Key
 
-- Your **OpenAI API key** is entered at runtime and **not stored**.
+Your **OpenAI API key** is entered at runtime.
+
 ---
 
 ## 🛠 Tech Stack
