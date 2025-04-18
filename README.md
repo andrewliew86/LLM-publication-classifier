@@ -1,0 +1,69 @@
+# 🧬 Clinical Trial Analyzer
+
+This tool helps identify whether research papers are clinical trials by leveraging OpenAI's GPT-4o model. You can upload a CSV file containing paper titles and abstracts, and the model will return a simple **"Yes" or "No"** answer for each paper. The prompt used for analysis can be customized to fit your research needs.
+
+## ⚠️ Disclaimer
+
+This is a bare-bones prototype, “vibe-coded” using GPT-4o to explore a proof of concept. It is not production-ready — there's no backend, minimal validation, and the app runs entirely in-browser!
+---
+
+## 🔍 How It Works
+
+- Upload a CSV file with the following columns: `ID`, `title`, `abstract`
+- Enter your OpenAI API key (kept local to your browser)
+- Customize the GPT prompt question if needed
+- Run the analysis and download the results as a new CSV file
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/cdk4-clinical-trial-analyzer.git
+cd cdk4-clinical-trial-analyzer
+```
+
+### 2. Install Dependencies
+
+Make sure you have [Node.js](https://nodejs.org/) installed. Then run:
+
+```bash
+npm install
+```
+
+### 3. Start the App Locally
+
+```bash
+npm run dev
+```
+
+This will launch the app at `http://localhost:5173` (or similar, depending on your setup).
+
+---
+
+## 📁 CSV Format
+
+Ensure your CSV includes at least these columns:
+
+```csv
+ID,title,abstract
+1,"Sample Title","This is the abstract of the research paper..."
+2,"Another Title","Another research abstract..."
+```
+A sample csv file dataset has been included in the repository for you to test the app.
+---
+
+## 🔐 API Key
+
+- Your **OpenAI API key** is entered at runtime and **not stored**.
+---
+
+## 🛠 Tech Stack
+
+- React (with TypeScript)
+- Vite for fast builds
+- OpenAI SDK
+- Papaparse (CSV parsing)
+- FileSaver.js (for exporting results)
