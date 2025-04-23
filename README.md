@@ -70,3 +70,11 @@ Your **OpenAI API key** is entered at runtime.
 - OpenAI SDK
 - Papaparse (CSV parsing)
 - FileSaver.js (for exporting results)
+
+## Future improvements
+
+- Write unit tests
+- Implement rate limiter for API calls. See: https://python.langchain.com/docs/how_to/chat_model_rate_limiting/
+- Add a SQL database to save all prompts and model outputs
+- Include unit tests
+- Add option to switch OpenAI models
