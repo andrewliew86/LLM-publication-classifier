@@ -22,8 +22,8 @@ This is a bare-bones prototype, “vibe-coded” using GPT-4o to explore a proof
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/cdk4-clinical-trial-analyzer.git
-cd cdk4-clinical-trial-analyzer
+git clone https://github.com/your-username/LLM-publication-classifier.git
+cd LLM-publication-classifier
 ```
 
 ### 2. Install Dependencies
